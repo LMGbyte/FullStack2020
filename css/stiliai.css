@@ -1,0 +1,65 @@
+body {
+    background-color: #6b5eff;
+}
+
+.hw2_1 {
+    background-color: white;
+}
+.hw2_2{
+    background-color: white;
+}
+
+.p_head {
+    border: 10px solid transparent;
+    border-image: url("imgx/border.png") 25 round;
+    background-color: yellow;
+}
+
+.name {
+    color: brown;
+}
+
+h3 {
+    color: black;
+}
+
+.header_raw {
+    background-color: rgb(165, 42, 42);
+    color: white;
+    text-align: right;
+}
+
+.even_raw {
+    background-color: rgb(255, 243, 216);
+    color: black;
+}
+
+.odd_raw {
+    background-color: rgb(255, 243, 187);
+    color: black;
+}
+.even_raw:hover{
+    background-color: #85f0ff;
+}
+.odd_raw:hover{
+    background-color: #85f0ff;
+}
+
+.t_jew_fc {
+    column-width: 80px;
+}
+
+.t_jew td {
+    border-collapse: collapse;
+    column-width: 50px;
+}
+
+.t_jew, .even_raw, .odd_raw{
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-left-color: rgb(165, 42, 42);
+    border-bottom-color: black;
+    border-right-color: rgb(165, 42, 42);
+    border-top-color: black;
+
+}

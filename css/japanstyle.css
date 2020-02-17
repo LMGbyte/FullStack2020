@@ -1,0 +1,17 @@
+.japan_flag {
+    padding-top: 20px;
+    height: 80px;
+    width: 180px;
+    background: #FFF;
+    position: relative;
+    border-collapse: collapse;
+    border: 2px solid;
+}
+.japan_sun{
+    margin: auto;
+    height: 40px;
+    width: 60px;
+    background: red;
+    border: 1px solid red;
+    border-radius: 50px;
+}
