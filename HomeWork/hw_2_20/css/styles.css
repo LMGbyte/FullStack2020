@@ -1,11 +1,37 @@
 .topcolor{
     background-color: rgb(222,240,252);
 }
-
 .leftcolor{
     background-color: rgb(230,230,230);
 }
-
 .leftgradient{
     background-image: linear-gradient(90deg, rgb(230,230,230)90%, rgb(177,177,177));
+}
+.bc_main{
+    background-color: #ffdead;
+}
+.bc_box{
+    background-color: rgb(126,110,85);
+    border: 2px solid rgb(255,110,85);
+    color: rgb(219,139,85);
+    font-family: "Times New Roman";
+    font-size: larger;
+    text-indent: 20px;
+}
+.alert_fl{
+    color: rgb(1,50,147);
+}
+.alert_f2{
+    color: rgb(65,181,40);
+}
+
+.alert_left{
+    -ms-flex: 0 0 3%;
+    flex: 0 0 3%;
+    max-width: 3%
+}
+.alert_right{
+    -ms-flex: 0 0 97%;
+    flex: 0 0 97%;
+    max-width: 97%
 }
