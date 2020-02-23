@@ -6,3 +6,6 @@
     background-color: rgb(230,230,230);
 }
 
+.leftgradient{
+    background-image: linear-gradient(90deg, rgb(230,230,230)90%, rgb(177,177,177));
+}
