@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homework5</title>
+    <meta charset="UTF-8">
+<!--    <link href="style5.css" rel="stylesheet">-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style>
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background:#FFDEAD;
+            padding: 30px;
+            border-radius: 10px
+        }
+        .row {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            padding: 10px;
+            background: black;
+            color: #B93B00;
+            border: 1px solid #FF0000;
+        }
+        .mainbox1 {
+            margin-top: 20px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 20px solid;
+            background: #ECF5E4;
+            border-bottom-color:#95CD8B;
+            border-right-color: #D0E6BB;
+            border-left-color: #95CD8B;
+            border-top-color: #95CD8B;
+        }
+        .content {
+            margin: 25px;
+            font: 36px bold;
+        }
+        .mainbox2 {
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            border: 20px solid;
+            background: #ECF5E4;
+            border-bottom-color:#95CD8B;
+            border-right-color: #D0E6BB;
+            border-left-color: #95CD8B;
+            border-top-color: #95CD8B;
+        }
+        .grid-container {
+            margin-top: 20px;
+            margin-left: 150px;
+            width: 800px;
+            display: grid;
+            grid-template-columns: 1fr 12fr;
+            background-color: #D8F7E1;
+            border: 2px solid #AAE7BC;
+        }
+        .grid-item {
+            background-color: #D8F7E1;
+            padding: 5px;
+        }
+        .leadtext {
+            color: #01327E;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+        }
+        .contenttext {
+            color: #008120;
+            font-size: 20px;
+            margin: 0;
+        }
+    </style>
+</head>
+<div>
+    <div class="flex-container">
+        <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
+        <div class="row">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laborisLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+    </div>
+</div>
+<div class="mainbox1">
+    <div class="content">75%</div>
+</div>
+<div class="mainbox2">
+    <div class="content">75%</div>
+</div>
+<div class="grid-container">
+    <div class="grid-item">
+        <i class='fas fa-unlock-alt' style='font-size:48px;color:#008120'></i>
+    </div>
+    <div class="grid-item">
+        <p class="leadtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit!
+        </p>
+        <p class="contenttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+    </div>
+</div>
+</body>
+</html>
