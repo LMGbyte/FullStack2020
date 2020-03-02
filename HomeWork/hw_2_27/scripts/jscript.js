@@ -6,7 +6,7 @@ document.clear();
 document.write(`${a} + ${b} = ${a+b}<br>`);
 document.write(`${a} - ${b} = ${a-b}<br>`);
 document.write(`${a} * ${b} = ${a*b}<br>`);
-document.write(`${a} / ${b} = ${a/b}<br>`);
+document.write(`${a} / ${b} = ${a/b}`);
 document.write(`<hr>`);
 
 let c = 15, d = 2;
@@ -28,7 +28,7 @@ document.write(`<hr>`);
 
 let name = 'Mindaugas';
 document.write(`Hello, ${name}!<br>`);
-let age = 69;
+let age = 99;
 document.write(`I'm ${age} old!<br>`);
 name = prompt(`What's Your name?`);
-document.write(`Your name ${name}<br>`);
+alert(`Your name ${name}`);
