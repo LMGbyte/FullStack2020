@@ -10,7 +10,7 @@ console.log(arr1[2]);
 let arr2 = ["a","b","c","d"];
 document.write(`${arr2[0]} + ${arr2[1]} <br>`) ;
 document.write(`${arr2[2]} + ${arr2[3]} <br>`) ;
-document.write(`<hr>`);
+document.write('<hr>');
 //     Sukurkite masyvą su elementais 2, 5, 3, 9.
 //     Pirmąjį masyvo elementą padauginkite iš antrojo, o trečiąjį elementą iš ketvirtojo.
 //     Sudėkite rezultatus, priskirkite kintamąjam. Parodykite šio kintamojo reikšmę.
@@ -23,7 +23,7 @@ let arr4 = {
     a: 1,
     b: 2,
     c: 3
-}
+};
 document.write(`Skliausteliu: ${arr4["c"]} <br>`);
 document.write(`Objekto savybė: ${arr4.c} <hr>`);
 //     Sukurkite objektą su savaitės dienomis.
@@ -45,7 +45,7 @@ document.write(`Šiandien yra ${weekD[day]} <br>`);
 //     Sukurkite kintamjį day kuriame saugomas savaitės dienos numeris.
 //     Atspausdinkite savaitės dieną naudojant sita kintamajį.
 let dayManual = 1;
-document.write(`${dayManual} -> `)
+document.write(`${dayManual} -> `);
 if (dayManual>=1 && dayManual<=7){
     document.write(`${weekD[dayManual]} <hr>`);
 } else document.write(`Tokios savaitės dienos nėra.<hr>`);
@@ -59,7 +59,7 @@ let arr6 = {
     js: ['jQuery', 'Angular'],
     php: 'Hello',
     css: 'world'
-}
+};
 document.write(`${arr6.js[0]}<hr>`);
 //     Sukurkite dvimatį masyvą. Pirmieji du raktai yra lt ir en.
 //     Raktai turi savaitės dienų vardų masyvus lietuviškai ir angliškai.

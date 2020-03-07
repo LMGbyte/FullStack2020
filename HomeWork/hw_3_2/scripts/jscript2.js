@@ -14,12 +14,12 @@ console.log(arrb3);
 // Duotas masyvas 1, 2, 3. Pridėkite elementus 4, 5, 6 į galą ir -1, -2, -3 į priekį.
 let arrb4 = [1,2,3];
 arrb4.unshift(-1,-2,-3);
-arrb4.push(4,5,6)
+arrb4.push(4,5,6);
 console.log(arrb4);
 
 // Duotas masyvas html, css, js. Parodykite pirmąjį ir paskutinį elementus.
 let arrb5 = ['html','css','js'];
-console.log(`Pirmas: ${arrb5[0]}, paskutinis: ${arrb5[2]}`);
+console.log(`Pirmas: ${arrb5[0]}, paskutinis: ${arrb5[arrb5.length-1]}`);
 
 // Duotas masyvas 3, 4, 1, 2, 7. Surūšiuokite jį.
 let arrb6 = [3,4,1,2,7];
@@ -30,7 +30,7 @@ console.log(arrb6);
 let arrb7 = [1,2,3,4,5];
 arrb7=arrb7.slice(0,3);
 console.log(arrb7);
-console.log('----')
+console.log('----');
 
 // Duotas masyvas [1, 2, 3, 4, 5]. Konvertuokite masyvą į [1, 4, 5].
 let arrb8 = [1,2,3,4,5];
@@ -163,3 +163,19 @@ for (n in arrb17){
     document.write(`${n} yra ${arrb17[n]}<br>`);
 }
 document.write(`<hr>`);
+
+let arrClass = [1,2,3,4,5,6,7,8];
+let arrClassRev = [1];
+for (i=0;i<arrClass.length;i++){
+    arrClassRev[i]=arrClass[arrClass.length-1-i];
+};
+console.log(arrClass);
+console.log(arrClassRev);
+
+let arrClass = [1,2,3,4,5,6,7,8];
+buff = arrClass[0];
+for (i=0;i<arrClass.length;i++){
+
+};
+console.log(arrClass);
+console.log(arrClassRev);
