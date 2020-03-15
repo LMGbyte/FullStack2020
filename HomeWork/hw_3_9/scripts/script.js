@@ -13,7 +13,7 @@ function calculate (a,b,c){
 // Parašykite funkciją, kuri priima kaip parametrą skaičių nuo 1 iki 7, o grąžina savaitės dieną lietuvių kalba.
 function wday (n){
     let week_day =['Pirmadienis','Antradienis','Trečiadienis','Ketvirtadienis','Penktadienis','Šeštadienis', 'Sekmadienis'];
-    if (n<0||n>7){return 'Tokios savaitės dienos nėra'}
+    if (n<1||n>7){return 'Tokios savaitės dienos nėra'}
     return week_day[n-1];
 };
 
