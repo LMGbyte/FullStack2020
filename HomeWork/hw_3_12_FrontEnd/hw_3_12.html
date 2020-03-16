@@ -4,8 +4,194 @@
     <meta charset="UTF-8">
     <title>Homework 03 12</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/modalCSS.css">
 </head>
 <body>
+<!--Group No 1-->
+<div class="card mx-3 my-1" id="gr-1">
+    <p class="card-header">Paspaudus mygtuką iškvieskite <span style="color: red">alert ('Hello world!')</span></p>
 
+    <div class="card-body text-center">
+        <button class="btn btn-primary" id="warn_btn">Click on me</button>
+    </div>
+    </div>
+
+</div>
+
+<!--Group No 2-->
+<div class="card mx-3 my-1" id="gr-2">
+    <p class="card-header">Įvestai reikšmei, priklausomai nuo paspausto mygtuko, keičiame registrą (Didžiosios/mažosios raidės).</p>
+
+    <div class="card-body text-center">
+        <div class="input-group">
+
+            <input type="text" class="form-control" placeholder="Fill me in" id="text_input_1">
+
+            <div class="input-group-append" id="button-addon4">
+                <button class="btn btn-outline-secondary" type="button" id="btn_tuc">To Upper Case</button>
+                <button class="btn btn-outline-secondary" type="button" id="btn_tlc">To Lower Case</button>
+                <button class="btn btn-outline-secondary" type="button" id="btn_fuc">First Upper Case</button>
+                <button class="btn btn-outline-secondary" type="button" id="btn_flc">First Lower Case</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Group No 3-->
+
+<div class="card mx-3 my-1" id="gr-3">
+
+    <div class="card-header">
+        <p>Paspaudus mygtuką, patikrinkite įvestas reikšmes ir jeigu reikia, parodykite klaidų pranešimus.</p>
+        <ul class="mt-0" style="color: #757E85">
+            <li>element show/hide</li>
+            <li>class add/remove</li>
+        </ul>
+    </div>
+
+    <div class="card-body">
+        <form class="row">
+            <div class="col-2">
+                <label for="InputEmail">Email address</label>
+            </div>
+            <div class="form-group col-10  ">
+                <input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                <small id="checkEmail" class="form-text text-danger d-none">Please check Email</small>
+            </div>
+            <div class="col-2">
+                <label for="InputPhoneNumber">Phone number</label>
+            </div>
+            <div class="form-group col-10">
+                <input type="text" class="form-control" id="InputPhoneNumber">
+                <small id="checkPhone" class="form-text text-danger d-none">Please check phone number</small>
+            </div>
+            <div class="col-2">
+
+            </div>
+            <div class="form-group col-10">
+                <button type="button" class="btn btn-outline-secondary" id="btn_save">Save</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<!--Group No 4-->
+<div class="card mx-3 my-1" id="gr-4">
+
+    <p class="card-header">Paspaudus mygtuką: užblokuokite/atblokuokite <span style="color: red">input</span></p>
+
+    <div class="card-body text-center">
+        <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <button class="btn btn-outline-danger" type="button" id="btn_block">Block</button>
+        </div>
+        <input type="text" class="form-control" placeholder="" id="Input4">
+        <div class="input-group-append">
+            <button class="btn btn-outline-success" type="button" id="btn_unblock">Unblock</button>
+        </div>
+        </div>
+    </div>
+
+</div>
+
+<!--Group No 5-->
+<div class="card mx-3 my-1" id="gr-5">
+
+    <div class="card-header">
+        <p>Užvedus ant paveiksliuko pakeiskite jį:</p>
+        <ul class="mt-0" style="color: blue">
+            <li>https://i.imgur.com/PLDVxza.jpg</li>
+            <li>https://i.imgur.com/0DElr0H.jpg</li>
+        </ul>
+    </div>
+
+    <div class="card-body text-center">
+        <img src="img/0DElr0H.jpg" alt="Square" class="img-thumbnail" id="monkey">
+    </div>
+
+</div>
+
+<!--Group No 6-->
+<div class="card mx-3 my-1" id="gr-5">
+
+    <div class="card-header">
+        <p>Paspaudus ant mygtuko turi "iškristi" meniu su punktais. Paspsudus punktą turi įvykti veiksmas.</p>
+    </div>
+
+    <div class="card-body text-left" id="mod_text">
+        <h6 align="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+        <p align="right">- Someone famous in Source Title</p>
+        <!-- Example single danger button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Cursors
+            </button>
+            <div class="dropdown-menu">
+                <p class="dropdown-item" id="s_crosshair">Crosshair</p>
+                <p class="dropdown-item" id="s_help">Help</p>
+                <p class="dropdown-item" id="s_wait">Wait</p>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Colors
+            </button>
+            <div class="dropdown-menu">
+                <p class="dropdown-item" id="s_red">Red</p>
+                <p class="dropdown-item" id="s_green">Green</p>
+                <p class="dropdown-item" id="s_blue">Blue</p>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Borders
+            </button>
+            <div class="dropdown-menu">
+                <p class="dropdown-item" id="s_solid">Solid</p>
+                <p class="dropdown-item" id="s_dashed">Dashed</p>
+                <p class="dropdown-item" id="s_double">Double</p>
+            </div>
+        </div>
+        <button class="btn btn-success" id="reset_btn">Reset</button>
+
+    </div>
+</div>
+    <!--Group No 7-->
+    <div class="card mx-3 my-1" id="gr-1">
+        <p class="card-header">Paspaudus mygtuką parodykite informaciją apie save modaliniame lange.</p>
+
+        <div class="card-body text-center">
+            <button class="btn btn-primary" id="modal_btn">Launch modal</button>
+        </div>
+    </div>
+
+<!--Modal-->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="my-3">Trumpai apie mane...</h2>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body my-3">
+            <p>
+                Mano vardas - Mindaugas<br>
+                Gyvenu visai netoli Baltijos jūros<br>
+                Mokausi programavimo, gal pravers :)
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
