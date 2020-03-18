@@ -24,9 +24,6 @@ document.getElementById('reverse-btn').addEventListener('click', function(){
 
 });
 
-
-
-
 function move(stepx) {
     moving = true;
     var pos = curr_pos_num;
@@ -54,6 +51,3 @@ function move(stepx) {
     }
 
 }
-// Usefull functions....
-
-// setTimeout(function (){console.log('time ok')}, 6000);
