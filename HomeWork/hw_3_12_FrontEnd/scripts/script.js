@@ -7,34 +7,29 @@ function warning1 (){
 
 // --- 2 ---
 
-document.getElementById("btn_tuc").addEventListener('click',ToUpperCaseF);
-document.getElementById("btn_tlc").addEventListener('click',ToLowerCaseF);
-document.getElementById("btn_fuc").addEventListener('click',FirstUpperCaseF);
-document.getElementById("btn_flc").addEventListener('click',FirstLowerCaseF);
+const text_input1 = document.getElementById("text_input_1");
 
+document.getElementById("btn_tuc").addEventListener('click',function () {
+    text_input1.value = text_input1.value.toUpperCase();
+});
+document.getElementById("btn_tlc").addEventListener('click',function () {
+    text_input1.value = text_input1.value.toLowerCase();
+});
+document.getElementById("btn_fuc").addEventListener('click',function(){
+    text_input1.value = FirstUpperCaseF(text_input1.value);
+});
+document.getElementById("btn_flc").addEventListener('click', function(){
+    text_input1.value = FirstLowerCaseF(text_input1.value);
+});
 
-function ToUpperCaseF (){
-    let text_input1 = document.getElementById("text_input_1").value;
-    document.getElementById("text_input_1").value = text_input1.toUpperCase();
-}
+function FirstUpperCaseF (value){
+    value = value.toLowerCase();
+    return value.charAt(0).toUpperCase()+value.slice(1);
+};
 
-function ToLowerCaseF (){
-    let text_input1 = document.getElementById("text_input_1").value;
-    document.getElementById("text_input_1").value = text_input1.toLowerCase();
-}
-
-function FirstUpperCaseF (){
-    let text_input1 = document.getElementById("text_input_1").value;
-    text_input1 = text_input1.toLowerCase();
-    document.getElementById("text_input_1").value = text_input1.charAt(0).toUpperCase()+text_input1.slice(1);
-
-}
-
-function FirstLowerCaseF (){
-    let text_input1 = document.getElementById("text_input_1").value;
-    text_input1 = text_input1.toUpperCase();
-    document.getElementById("text_input_1").value = text_input1.charAt(0).toLowerCase()+text_input1.slice(1);
-
+function FirstLowerCaseF (value){
+    value = value.toUpperCase();
+    return value.charAt(0).toLowerCase()+value.slice(1);
 }
 
 // --- 3 ---
