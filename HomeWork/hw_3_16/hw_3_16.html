@@ -3,81 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Homework 03 16 Moving geometry</title>
-    <style>
-        /* --- slider css--- */
-
-        .slidecontainer {
-  width: 100%;
-}
-
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 50px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.5;
-  -webkit-transition: 1s;
-  transition: opacity 1s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #ddd;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  border: 1px solid;
-  width: 15px;
-  height: 40px;
-  background: #ff0000;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* main css */
-        .main {
-            border: 1px solid;
-            width: 100%;
-            height: 50px;
-        }
-        .butt {
-            border: 1px solid;
-            border-radius: 5px;
-            background-color: #009abf;
-            font-family: Arial;
-            width: 10%;
-            height: 30px;
-            position: relative;
-            align-content: center;
-            text-align: ;
-
-        }
-        div.butt {
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin: 4px;           
-        }
-        .butt:hover{
-            background-color: aquamarine;
-        }
-
-        img {
-            position: relative;
-        }
-
-    </style>
-
+    <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -85,15 +12,27 @@
     <img src="img/circ.svg" id="m-obj" style="left: 0px">
 </div>
 
-<div>
+<div class="settings">
+    <div id="settings-n">Control</div>
     <div class="butt" id="start-btn">Start</div>
     <div class="butt" id="stop-btn">Stop</div>
-    
-</div>
-<div>
-    <input type="range" min="1" max="20" value="1" class="slider" id="speed-in">
-</div>
 
+    <label for="speed-in">Select speed:</label>
+    <input type="range" min="1" max="20" value="1" class="slider" id="speed-in">
+
+    <br>
+
+    <label for="figures">Select figure:</label>
+    <select id="figures" name="cars">
+        <option value="img/circ.svg">Circle</option>
+        <option value="img/rect.svg">Rectangle</option>
+        <option value="img/triangle.svg">Triangle</option>
+        <option value="img/rombus.svg">Rombus</option>
+        <option value="img/hexagon.svg">Hexagon</option>
+    </select>
+
+    <div class="butt" id="reverse-btn">Reverse</div>
+</div>
 
 <script src="scripts/script.js"></script>
 </body>

@@ -15,6 +15,18 @@ document.getElementById('stop-btn').addEventListener('click', function(){
     moving = false;
 });
 
+document.getElementById('figures').addEventListener('change', function(){
+    mobj.src = document.getElementById('figures').value;
+});
+
+document.getElementById('reverse-btn').addEventListener('click', function(){
+    forward = !forward;
+
+});
+
+
+
+
 function move(stepx) {
     moving = true;
     var pos = curr_pos_num;
