@@ -27,6 +27,7 @@
     background-color: white;
 }
 
+
 img {
     position: relative;
 }
@@ -44,12 +45,15 @@ img {
 .settings {
     width: 300px;
     margin-top: 20px;
+    margin-left: 300px;
     padding-bottom: 20px;
     padding-left: 5px;
     padding-right: 5px;
     border: 1px solid;
     box-shadow: 10px 10px 5px grey;
 }
+
+
 #start-btn{
     margin-top: 15px;
 }

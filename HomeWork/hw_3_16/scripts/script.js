@@ -13,6 +13,7 @@ document.getElementById('start-btn').addEventListener('click', function(){
 });
 document.getElementById('stop-btn').addEventListener('click', function(){
     moving = false;
+    document.getElementById('settings').style.style.display = "none";
 });
 
 document.getElementById('figures').addEventListener('change', function(){
