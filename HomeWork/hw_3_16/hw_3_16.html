@@ -24,7 +24,7 @@
 
     <label for="figures">Select figure:</label>
     <select id="figures" name="cars">
-        <option value="img/circ.svg">Circle</option>
+        <option value="img/circ.svg" selected>Circle</option>
         <option value="img/rect.svg">Rectangle</option>
         <option value="img/triangle.svg">Triangle</option>
         <option value="img/rombus.svg">Rombus</option>
@@ -32,6 +32,10 @@
     </select>
 
     <div class="butt" id="reverse-btn">Reverse</div>
+    <div><b>Lets play:</b> try to reverse as less distance from left side as possible</div>
+    <div class='result' id='speed-value'>Speed: 0 px/s</div>
+    <div class='result' id='current'>Current: px</div>
+    <div class='result' id='best'>Best: px</div>
 </div>
 
 <script src="scripts/script.js"></script>
