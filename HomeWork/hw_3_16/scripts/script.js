@@ -33,12 +33,15 @@ document.getElementById('figures').addEventListener('change', function(){
 document.getElementById('reverse-btn').addEventListener('click', function(){
     if (forward){
         score_c = pos;
+        if (score_c <= 0){score_c = 0};
     }
     forward = !forward;
 });
 
 function return_score (){
     if (score_max < score_c) {
+        if (score_c <=0){score_c = 0};
+        if (stepx==20 && score_c==0){alert("You've reached the TOP!")};
         score_c = score_max;
         return score_c;
     }
