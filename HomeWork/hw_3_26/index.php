@@ -282,13 +282,10 @@ function bthrowmulti($n)
 
         function fivesix()
         {
-            $count = 0;
-            while ($count < 2) {
+            $dice = 0;
+            while ($dice < 5) {
                 $dice = throwone();
-                if ($dice == 5 || $dice == 6) {
-                    $count += 1;
                 }
-            }
         }
 
         echo fivesix();
