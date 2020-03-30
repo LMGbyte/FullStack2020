@@ -22,8 +22,6 @@
                 . " % Vėjo greitis: " . $wind . " m/s </h3>\n";
         }
 
-        ;
-
         weather(12.5, 55, 15);
         ?>
     </div>
@@ -77,13 +75,12 @@
             echo $name . ": ";
             foreach ($arrayToPrint as $value) {
                 echo $value . " ";
-            };
+            }
             if ($nwl) {
                 echo "<br>";
             }
         }
 
-        ;
         printall("Pirmas masyvas", $one, true);
         printall("Antras masyvas", $two, true);
         printall("Trečias masyvas", $three, true);
@@ -162,7 +159,7 @@
                 $arrayin[count($arrayin) - 1 - $i] = $temp;
                 $temp = $arrayin[$i + 1];
 
-            };
+            }
             $stringout = "";
             foreach ($arrayin as $value) {
                 $stringout = $stringout . $value . " ";
@@ -190,8 +187,8 @@
                 if (is_numeric($value)) {
                     $sum += $value;
                     $count += 1;
-                };
-            };
+                }
+            }
             return $sum / $count;
         }
 
@@ -218,11 +215,11 @@
                 for ($i = 2; $i < $length; $i++) {
                     array_push($initArray,
                         ($initArray[$i - 2] + $initArray[$i - 1]));
-                };
+                }
                 foreach ($initArray as $value) {
                     $arrayString = $arrayString . $value . " ";
-                };
-            };
+                }
+            }
 
             return $arrayString;
         }
@@ -247,7 +244,7 @@ function bthrowmulti($n)
         $bone = bthrow();
         $bonesum += $bone;
         $image = $images_path . $bone . ".svg";
-        echo "<img src=$image>";
+        echo "<img src=$image alt='Kauliukas'>";
     }
     return $bonesum;
 }
@@ -267,7 +264,7 @@ function bthrowmulti($n)
             $images_path = "/img/";
             $bone = bthrow();
             $image = $images_path . $bone . ".svg";
-            echo "<img src=$image>";
+            echo "<img src=$image alt='Kauliukas'>";
             return $bone;
         }
 
@@ -279,7 +276,7 @@ function bthrowmulti($n)
                 }
         }
 
-        echo fivesix();
+        fivesix();
         ?>
     </div>
 </div>
