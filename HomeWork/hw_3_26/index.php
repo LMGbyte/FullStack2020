@@ -20,11 +20,11 @@ multiply(3, 2);
 function positive(int $x)
 {
     if (is_numeric($x)) {
-        echo abs($x) . "<br>";
+        return abs($x);
     }
 }
 
-positive("-255");
+echo positive("-255")."<br>";
 ?>
 
 <?php
