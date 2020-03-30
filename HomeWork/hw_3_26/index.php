@@ -12,15 +12,6 @@
 <body>
 
 <div class="card mx-3 my-1" id="gr-1">
-    <p class="card-header"></p>
-    <div class="card-body text-center">
-        <?php
-
-        ?>
-    </div>
-</div>
-
-<div class="card mx-3 my-1" id="gr-1">
     <p class="card-header">Sukurti funkciją, kuri ima 3 parametrus, ir
         atspausdina juos h3 HTML tag</p>
     <div class="card-body text-center">
