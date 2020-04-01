@@ -10,12 +10,18 @@ include 'functions_3_30.php';
 <body>
 <div>
     <?php
-    echo pyramid();
+    echo pyramid().'<hr>';
     ?>
 </div>
 <div>
     <?php
-    echo convert('mini_pop_ula_kamarok');
+    echo convert('mini_pop_ula_kamarok').'<hr>';
+    ?>
+</div>
+<div>
+    <?php
+    $date = '2020.01.15';
+    echo $date.' yra '.zodiac($date).'<hr>';
     ?>
 </div>
 </body>
