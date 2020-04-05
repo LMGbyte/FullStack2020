@@ -238,7 +238,7 @@ function bthrow()
 //Čia papildoma funkcija, kurios pagalba galima nustatyti kiek kauliukų mesti bei grąžinti išmestų kauliukų taškų sumą
 function bthrowmulti($n)
 {
-    $images_path = "/img/";
+    $images_path = "img/";
     $bonesum = 0;
     for ($i = 1; $i < $n; $i++) {
         $bone = bthrow();
@@ -261,7 +261,7 @@ function bthrowmulti($n)
 
         function throwone()
         {
-            $images_path = "/img/";
+            $images_path = "img/";
             $bone = bthrow();
             $image = $images_path . $bone . ".svg";
             echo "<img src=$image alt='Kauliukas'>";
