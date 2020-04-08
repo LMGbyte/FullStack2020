@@ -261,7 +261,7 @@ function bthrowmulti($n)
 
         function throwone()
         {
-            $images_path = "/img/";
+            $images_path = "img/";
             $bone = bthrow();
             $image = $images_path . $bone . ".svg";
             echo "<img src=$image alt='Kauliukas'>";
