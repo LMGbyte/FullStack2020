@@ -45,7 +45,7 @@ function calculate($exp)
 
 function clear_data()
 {
-    if (isset($_SESSION[SESSION_KEY]) {
+    if (isset($_SESSION[SESSION_KEY])) {
         $_SESSION[SESSION_KEY] = array();
     }
 }
