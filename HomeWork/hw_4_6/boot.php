@@ -2,6 +2,8 @@
 
 session_start();
 
-if (!isset($_SESSION['results'])) {
-    $_SESSION['results'] = array();
+define('SESSION_KEY', 'results');
+
+if (!isset($_SESSION[SESSION_KEY])) {
+    $_SESSION[SESSION_KEY] = array();
 }

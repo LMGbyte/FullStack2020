@@ -47,7 +47,7 @@ require 'function.php';
             calculate($_GET['expression']);
             unset($GLOBALS['$_GET[\'expression\']']);
         }
-        foreach ($_SESSION['results'] as $res) {
+        foreach ($_SESSION[SESSION_KEY] as $res) {
             echo '<h3>' . $res . '</h3>';
         }
         ?>

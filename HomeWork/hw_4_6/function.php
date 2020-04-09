@@ -18,7 +18,7 @@ function calculate($exp)
         $a = floatval(substr($exp, 0, $act_pos));
         $b = floatval(substr($exp, (strlen($exp) - $act_pos - 1) * (-1)));
     } else {
-        array_unshift($_SESSION['results'], 'Bad expression');
+        array_unshift($_SESSION[SESSION_KEY], 'Bad expression');
         return 'Bad expression';
     }
     switch ($exp[$act_pos]) {
@@ -39,13 +39,13 @@ function calculate($exp)
             break;
     }
     $output = $exp . ' = ' . $result;
-    array_unshift($_SESSION['results'], $output);
+    array_unshift($_SESSION[SESSION_KEY], $output);
     return $output;
 }
 
 function clear_data()
 {
-    $_SESSION['results'] = array();
+    $_SESSION[SESSION_KEY] = array();
 }
 
 ?>
