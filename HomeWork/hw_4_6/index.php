@@ -24,7 +24,8 @@ require 'function.php';
                 <p>Matematinė išraiška</p>
                 <input type="text" class="form-control"
                        name="expression"
-                       placeholder="1+5">
+                       placeholder="1+5"
+                        id="ein">
             </div>
             <button type="submit" class="btn btn-primary mb-2">Skaičiuoti</button>
         </form>
@@ -53,6 +54,8 @@ require 'function.php';
         ?>
     </div>
 </div>
-
+<script>
+    document.getElementById("ein").focus();
+</script>
 </body>
 </html>
