@@ -3,9 +3,13 @@
 // Saving data from form in text file in JSON format
 
 // check if all form data are submited, else output error message
-if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
+if (isset($_POST['name']) && isset($_POST['email'])
+    && isset($_POST['message'])
+) {
     // if form fields are empty, outputs message, else, gets their data
-    if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
+    if (empty($_POST['name']) || empty($_POST['email'])
+        || empty($_POST['message'])
+    ) {
         echo 'All fields are required';
     } else {
         // adds form data into an array
@@ -47,5 +51,5 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']))
     echo 'Form fields not submited';
 }
 
-header("Location: hw_4_2.php");
+header('hw_4_2.php');
 ?>
