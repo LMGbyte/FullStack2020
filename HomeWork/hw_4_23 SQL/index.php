@@ -16,19 +16,23 @@
 <div class="card m-3 text-center">
     <h5 class="card-header">Darbuotojai</h5>
     <div class="card-body">
-
-        <form>
+        <form action="output.php" method="post">
             <div class="row">
                 <div class="col-sm-4"></div>
             <div class="form-group col-sm-4">
                 <label for="salaryInput">Įveskite atlyginimą...</label>
-                <input type="number" class="form-control" id="salaryInput" aria-describedby="emailHelp">
+                <input type="number" class="form-control" id="salaryInput" name="salaryInput">
             </div>
                 <div class="col-sm-4"></div>
             </div>
             <button type="submit" class="btn btn-primary">Pateikti sąrašą</button>
         </form>
-
+    </div>
+    <hr>
+    <div class="card-body">
+        <form action="input.php">
+            <button type="submit" class="btn btn-primary">Įveskite naują darbuotoją</button>
+        </form>
     </div>
 </div>
 
