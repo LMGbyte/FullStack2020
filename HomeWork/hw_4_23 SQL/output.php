@@ -28,7 +28,7 @@ try {
 if ($_POST['salaryInput']==''){
     $_POST['salaryInput']=0;
 }
-    $sql = 'SELECT name, surname, salary FROM employees WHERE salary >= '
+    $sql = 'SELECT name, surname, salary, position FROM employees WHERE salary >= '
         . $_POST['salaryInput'] . ' ORDER BY salary DESC';
 ?>
 

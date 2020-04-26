@@ -21,25 +21,25 @@
                 <div class="col-lg-2"></div>
                 <div class="form-group col-lg-8 text-left">
                     <label for="nameIn">Vardas</label>
-                    <input type="text" class="form-control" id="nameIn">
+                    <input type="text" class="form-control" id="nameIn" name="nameIn">
                 </div>
                 <div class="col-lg-2"></div>
                 <div class="col-lg-2"></div>
                 <div class="form-group col-lg-8 text-left">
                     <label for="surnameIn">Pavardė</label>
-                    <input type="text" class="form-control" id="surnameIn">
+                    <input type="text" class="form-control" id="surnameIn" name="surnameIn">
                 </div>
                 <div class="col-lg-2"></div>
                 <div class="col-lg-2"></div>
                 <div class="form-group col-lg-8 text-left">
                     <label for="positionIn">Pareigos</label>
-                    <input type="text" class="form-control" id="positionIn">
+                    <input type="text" class="form-control" id="positionIn" name="positionIn">
                 </div>
                 <div class="col-lg-2"></div>
                 <div class="col-lg-2"></div>
                 <div class="form-group col-lg-8 text-left">
                     <label for="salaryIn">Atlyginimas</label>
-                    <input type="number" class="form-control" id="salaryIn">
+                    <input type="number" class="form-control" id="salaryIn" name="salaryIn">
                 </div>
                 <div class="col-lg-2"></div>
 
