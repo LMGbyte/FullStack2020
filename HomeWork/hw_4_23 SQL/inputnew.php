@@ -24,10 +24,10 @@ $stmt->bindParam(':position', $position);
 $stmt->bindParam(':salary', $salary);
 
 // insert one row
-$name = $_POST['nameIn'];
-$surname = $_POST['surnameIn'];
-$position = $_POST['positionIn'];
-$salary = $_POST['salaryIn'];
+$name = htmlspecialchars($_POST['nameIn']);
+$surname = htmlspecialchars($_POST['surnameIn']);
+$position = htmlspecialchars($_POST['positionIn']);
+$salary = htmlspecialchars($_POST['salaryIn']);
 
 if ($_POST['nameIn']==''||$_POST['surnameIn']==''||$_POST['positionIn']==''||$_POST['salaryIn']=='')
 {
