@@ -45,6 +45,11 @@ if ($_POST['nameIn']==''||$_POST['surnameIn']==''||$_POST['positionIn']==''||$_P
     $stmt->execute();
 }
 
+$name = '';
+$surname = '';
+$position = '';
+$salary = '';
+
 // Čia bandžiau su query, bet nepavyko:
 
 //$sqlin = 'INSERT INTO employees (name, surname, position, salary) VALUES ('. $_POST['nameIn'] . ','.$_POST['surnameIn'] . ',' . $_POST['positionIn']
