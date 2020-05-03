@@ -21,7 +21,7 @@
                 <div class="col-sm-4"></div>
             <div class="form-group col-sm-4">
                 <label for="salaryInput">Įveskite atlyginimą...</label>
-                <input type="number" class="form-control" id="salaryInput" name="salaryInput">
+                <input type="number" step=0.01 class="form-control" id="salaryInput" name="salaryInput">
             </div>
                 <div class="col-sm-4"></div>
             </div>

@@ -48,7 +48,7 @@
 					
 					
 					<button type="submit" class="btn btn-primary mr-2">Filter</button>
-					<a href="/" class="btn btn-danger">Clear</a>
+					<a href="http://php.local/www/FullStack/HomeWork/hw_final_base/public/" class="btn btn-danger">Clear</a>
 				</form>
 			</div>
 			<div class="col-12 col-sm-2">

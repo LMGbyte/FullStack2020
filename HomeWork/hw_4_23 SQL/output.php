@@ -15,7 +15,7 @@ require 'con_vars.php';
 <?php
 
 try {
-    $con = new PDO('mydb', USER, PASSWORD);
+    $con = new PDO(MYDB, USER, PASSWORD);
 
 //    mydb - tai kintamasis, kuris nustatytas php.ini faile:
 //    pdo.dsn.mydb="mysql:dbname=fullstack;host=localhost:3308"
@@ -25,14 +25,21 @@ try {
     echo 'Connection failed: ' . $e->getMessage();
     exit();
 }
-if ($_POST['salaryInput']==''){
-    $_POST['salaryInput']=0;
+if ($_POST['salaryInput'] == '') {
+    $_POST['salaryInput'] = 0;
 }
-    $sql = 'SELECT name, surname, salary, position FROM employees WHERE salary >= ' . $_POST['salaryInput'] . ' ORDER BY salary DESC';
+//$sql = 'SELECT name, surname, salary, position FROM employees WHERE salary >= ' . $_POST['salaryInput'] . ' ORDER BY salary DESC';
+$sql = 'SELECT 
+	`employees`.`name`, 
+	`employees`.`surname`,
+	`employees`.`salary`,
+	`positions`.`name` AS \'position\'
+FROM `employees`
+JOIN `positions` ON `positions`.`id` = `employees`.`position_id`';
 ?>
 
 <?php
-    include 'salarytable.php';
+include 'salarytable.php';
 ?>
 <div class="text-center">
     <form action="index.php">

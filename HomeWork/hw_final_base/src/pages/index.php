@@ -9,6 +9,9 @@ $query = 'SELECT
 FROM `employees`
 JOIN `positions` ON `positions`.`id` = `employees`.`position_id`';
 
+
+//--------- if any filtering is set ----------------
+
 if (isset($_GET['salary']) || isset($_GET['position'])) {
 	$query .= ' WHERE';
 
@@ -41,6 +44,8 @@ $stmt->execute();
 
 $employees = $stmt->fetchAll(PDO::FETCH_OBJ);
 
+//------------------------------------------------------
+
 $query = 'SELECT * FROM `positions`';
 
 $stmt = $dbh->prepare($query);
@@ -48,6 +53,8 @@ $stmt = $dbh->prepare($query);
 $stmt->execute();
 
 $positions = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+//---------------------------------------------------------
 
 require ROOT_PATH . '/views/index.php';
 

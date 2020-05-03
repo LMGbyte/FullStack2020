@@ -16,8 +16,8 @@ require 'con_vars.php';
 $con = new PDO('mydb', USER, PASSWORD);
 
 //die(var_dump($_POST['nameIn'] ,$_POST['surnameIn'] , $_POST['positionIn'],$_POST['salaryIn']));
-
-$stmt = $con->prepare('INSERT INTO employees (name, surname, position, salary) VALUES (:name,:surname,:position ,:salary)');
+$query = 'INSERT INTO employees (name, surname, position, salary) VALUES (:name,:surname,:position ,:salary)';
+$stmt = $con->prepare($query);
 $stmt->bindParam(':name', $name);
 $stmt->bindParam(':surname', $surname);
 $stmt->bindParam(':position', $position);

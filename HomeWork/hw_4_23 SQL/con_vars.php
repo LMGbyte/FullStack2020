@@ -1,4 +1,5 @@
 <?php
 
 define('USER', 'root');
-define('PASSWORD', '');
+define('PASSWORD', 'MySQLgesintuvas9');
+define('MYDB', 'mysql:host=localhost;dbname=fullstack');
