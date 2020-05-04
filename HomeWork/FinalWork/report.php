@@ -40,20 +40,14 @@ $result = '';
     <div class="text-center mt-3 mx-5">
         <form class="form-inline" action="" method="post">
             <select class="form-control w-25 mr-2" name="year" id="periodY">
-                <option value="<?php echo $_SESSION['year'] ?>"
-                        selected="selected"><?php echo $_SESSION['year']
-                        . " m" ?></option>
                 <?php for ($n = 2015; $n <= date("Y"); $n++): ?>
-                    <option value="<?php echo $n ?>"><?php echo $n
-                            . " m" ?></option>
+                    <option value="<?php echo $n ?>"<?php echo $n == $_SESSION['year'] ? ' selected="selected"' : '' ?>><?php echo $n. ' m' ?></option>
                 <?php endfor; ?>
             </select>
 
             <select class="form-control mr-2" name="month" id="periodM">
-                <option value="<?php echo $_SESSION['monthn']; ?>"
-                        selected="selected"><?php echo $_SESSION['month'] ?></option>
                 <?php for ($n = 1; $n <= 12; $n++): ?>
-                    <option value="<?php echo $n ?>"><?php echo monthLT($n) ?></option>
+                    <option value="<?php echo $n ?>"<?php echo $n == $_SESSION['monthn'] ? ' selected="selected"' : '' ?>><?php echo monthLT($n) ?></option>
                 <?php endfor; ?>
             </select>
             <button type="submit" class="btn btn-outline-primary"
