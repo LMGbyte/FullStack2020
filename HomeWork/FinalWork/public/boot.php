@@ -2,7 +2,7 @@
 
 session_start();
 
-define('ROOT_PATH', dirname(__FILE__));
+define('ROOT_PATH', dirname(dirname(__FILE__)));
 
 $env_path = ROOT_PATH . '/.env';
 
@@ -16,7 +16,7 @@ exit;
 
 unset($env_path);
 
-require ROOT_PATH . '/functions.php';
+require ROOT_PATH . '/public/functions.php';
 
 error_reporting(E_ALL);
 
