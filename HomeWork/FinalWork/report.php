@@ -10,11 +10,14 @@ $result = '';
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
-          integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+          integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Utilities</title>
 </head>
@@ -38,9 +41,11 @@ $result = '';
         <form class="form-inline" action="" method="post">
             <select class="form-control w-25 mr-2" name="year" id="periodY">
                 <option value="<?php echo $_SESSION['year'] ?>"
-                        selected="selected"><?php echo $_SESSION['year'] . " m" ?></option>
+                        selected="selected"><?php echo $_SESSION['year']
+                        . " m" ?></option>
                 <?php for ($n = 2015; $n <= date("Y"); $n++): ?>
-                    <option value="<?php echo $n ?>"><?php echo $n . " m" ?></option>
+                    <option value="<?php echo $n ?>"><?php echo $n
+                            . " m" ?></option>
                 <?php endfor; ?>
             </select>
 
@@ -51,7 +56,9 @@ $result = '';
                     <option value="<?php echo $n ?>"><?php echo monthLT($n) ?></option>
                 <?php endfor; ?>
             </select>
-            <button type="submit" class="btn btn-outline-primary">Generuoti</button>
+            <button type="submit" class="btn btn-outline-primary"
+                    id="generuoti">Generuoti
+            </button>
         </form>
     </div>
 <?php endif; ?>
@@ -69,7 +76,6 @@ $result = '';
     WHERE `data`.`period`=?';
 
     $stmt = $db->prepare($query);
-
 
 
     if (is_numeric($_SESSION['monthn'])) {
@@ -92,10 +98,11 @@ $result = '';
 
 <?php endif; ?>
 
-<?php if (isset($data)): ?>
+<?php if (isset($data) && sizeof($data) > 0): ?>
 
 <div class="mx-5">
-    <?php echo '<h5>'.$_SESSION['year'].' '.$_SESSION['month'].'</h5>'?>
+    <?php echo '<h5>' . $_SESSION['year'] . ' ' . $_SESSION['month']
+        . '</h5>' ?>
 </div>
 
 <div class="mx-5">
@@ -111,34 +118,39 @@ $result = '';
         </tr>
         </thead>
         <tbody>
-    <?php foreach ($data as $datum):
-        echo '<tr scope="row">' . "\n";
-        echo '<td>' . returnok($datum->utility) . "</td>\n";
-        echo '<td>' . returnok($datum->d_from) . "</td>\n";
-        echo '<td>' . returnok($datum->d_to) . "</td>\n";
-        echo '<td>' . returnok($datum->qty) . "</td>\n";
-        echo '<td>' . returnok($datum->price) . "</td>\n";
-        echo '<td>' . returnok($datum->d_sum) . "</td>\n";
-        echo '</tr>';
-        $sumum += floatval($datum->d_sum);
-     endforeach; ?>
-    <tr scope="row">
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><strong>Bendra suma:</strong></td>
-        <td><strong><?php echo $sumum?></strong></td>
-    </tr>
-    </tbody>
+        <?php foreach ($data as $datum):
+            echo '<tr scope="row">' . "\n";
+            echo '<td>' . returnok($datum->utility) . "</td>\n";
+            echo '<td>' . returnok($datum->d_from) . "</td>\n";
+            echo '<td>' . returnok($datum->d_to) . "</td>\n";
+            echo '<td>' . returnok($datum->qty) . "</td>\n";
+            echo '<td>' . returnok($datum->price) . "</td>\n";
+            echo '<td>' . returnok($datum->d_sum) . "</td>\n";
+            echo '</tr>';
+            $sumum += floatval($datum->d_sum);
+        endforeach; ?>
+        <tr scope="row">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><strong>Bendra suma:</strong></td>
+            <td><strong><?php echo $sumum ?></strong></td>
+        </tr>
+        </tbody>
     </table>
-<?php endif;?>
+    <?php endif; ?>
+    <?php if (isset($_POST['year'], $_POST['month']) && sizeof($data) == 0): ?>
+        <div class="text-center mt-3 mx-5">
+            <h5>Duomenų šiam laikotarpiui nėra</h5>
+        </div>
+    <?php endif; ?>
 </div>
 <div class="text-right mt-3 mx-5">
     <hr>
-    <a class="btn btn-outline-primary btn-lg" href="index.php" role="button">Į pradžią</a>
+    <a class="btn btn-outline-primary btn-lg" href="index.php" role="button">Į
+        pradžią</a>
 </div>
-
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
