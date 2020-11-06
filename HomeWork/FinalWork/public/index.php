@@ -21,6 +21,7 @@ $_SESSION['monthn']=date("n")-1;
 <body>
 <div class="text-center mt-5 mx-5">
     <h2 class="titles">Namų buhalteris</h2>
+    <h1> class="text"</h1>
     <hr>
 </div>
 <div class="text-center mt-2">
